@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Algoritmica y Progrmacion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqA0wy8puXSqqk4F0UGMNGxRf_u7ld-d4m5Q&s" alt="Logo UPTAIET" class="logo-img" onerror="this.src='https://via.placeholder.com/80?text=UPTAIET'">
+            </div>
+            <h1>Portal de Algorítmica y Programación</h1>
+            <div class="calc-trigger">
+                <button class="btn-calc" onclick="openCalc()">🖩 CALC</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">Unidad 1: Algoritmo y Programas <div class="arrow"></div></div>
+            <div class="card-content">
+                <p><strong>Concepto de Algoritmo:</strong> Un conjunto finito, preciso y ordenado de pasos lógicos que permiten resolver un problema o realizar una tarea específica.</p>
+                <p><strong>Partes de un Algoritmo:</strong> 
+                   <br>• Entrada: Datos iniciales necesarios.
+                   <br>• Proceso: Acciones y cálculos lógicos.
+                   <br>• Salida: El resultado esperado obtenido.
+                </p>
+                <p><strong>Formas de Representar:</strong>
+                   <br>• Lenguaje Natural: Narración simple del proceso.
+                   <br>• Pseudocódigo: Lenguaje intermedio cercano a la programación.
+                   <br>• Diagramas de Flujo: Representación gráfica simbólica.
+                </p>
+                <p><strong>Características:</strong> Debe ser Finito (tener fin), Definido (mismos pasos, mismo resultado), Preciso (orden riguroso) y Eficiente.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">Unidad 2: Metodología para Análisis de Problemas <div class="arrow"></div></div>
+            <div class="card-content">
+                <p><strong>1. Análisis:</strong> Comprender el problema, identificar datos de entrada y resultados deseados.</p>
+                <p><strong>2. Diseño:</strong> Crear la lógica del algoritmo (pseudocódigo o diagramas).</p>
+                <p><strong>3. Codificación/Implementación:</strong> Traducir la lógica a un lenguaje de programación (C++, Python, etc.).</p>
+                <p><strong>4. Ejecución:</strong> Puesta en marcha del programa en el computador.</p>
+                <p><strong>5. Pruebas y Depuración:</strong> Detectar errores (bugs) y corregirlos para asegurar la calidad.</p>
+                <p><strong>6. Mantenimiento:</strong> Actualizaciones y mejoras continuas del software.</p>
+                <p><strong>7. Documentación:</strong> Registro escrito del funcionamiento interno y manual de usuario.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">Unidad 3: Datos y Entidades <div class="arrow"></div></div>
+            <div class="card-content">
+                <p><strong>Datos vs Información:</strong> El dato es la mínima unidad semántica (ej. "20"). La información es el dato procesado con contexto (ej. "Edad: 20 años").</p>
+                <p><strong>Tipos de Datos:</strong>
+                   <br>• Simples: Enteros (int), Reales (float/double), Caracteres (char), Lógicos (bool).
+                   <br>• Compuestos: Arreglos, estructuras, cadenas.
+                </p>
+                <p><strong>Variables y Constantes:</strong>
+                   <br>• Variable: Espacio de memoria cuyo valor cambia (ej. `int edad = 18;`).
+                   <br>• Constante: Valor inalterable (ej. `const float PI = 3.1415;`).
+                </p>
+                <p><strong>Operadores y Prioridad:</strong>
+                   <br>1. Paréntesis `()`
+                   <br>2. Potencia e Incrementos
+                   <br>3. Multiplicación, División y Módulo `* / %`
+                   <br>4. Suma y Resta `+ -`
+                   <br>5. Relacionales `< > <= >= == !=`
+                </p>
+            </div>
+        </div>
+
+        <div class="card"><div class="card-header" onclick="toggleCard(this)">Unidad 4: Paradigmas de la programación <div class="arrow"></div></div><div class="card-content">En espera de información.</div></div>
+        <div class="card"><div class="card-header" onclick="toggleCard(this)">Unidad 5: Programación estructurada <div class="arrow"></div></div><div class="card-content">En espera de información.</div></div>
+        <div class="card"><div class="card-header" onclick="toggleCard(this)">Unidad 6: Programación modular <div class="arrow"></div></div><div class="card-content">En espera de información.</div></div>
+        <div class="card"><div class="card-header" onclick="toggleCard(this)">Unidad 7: Tratamiento de cadenas de caracteres <div class="arrow"></div></div><div class="card-content">En espera de información.</div></div>
+
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">Banco de Prácticas (20 Ejercicios Resueltos) <div class="arrow"></div></div>
+            <div class="card-content">
+                <div class="exercise-grid">
+                    <div class="level-column">
+                        <h3>Nivel Básico</h3>
+                        <div class="exercise-item">
+                        <p style="height: 33px !important">1. Sumar dos números enteros.</p>
+                        <div>
+                            <button onclick="mostrarSolucion('ejercicio1')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer; transition: background 0.2s ease;">
+                                Ver Solución
+                            </button>
+                        </div>
+                    </div>
+                        <!--DE TODOS LOS EJERCICIOS-->
+                        <div id="miModalSolucion" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0); backdrop-filter: blur(0px); justify-content: center; align-items: center; transition: background-color 0.3s ease, backdrop-filter 0.3s ease;">
+    
+                            <div id="modalTarjeta" style="background-color: #ffffff; padding: 20px; border-radius: 12px; width: 90%; max-width: 600px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); opacity: 0; transform: translateY(-20px); transition: transform 0.3s ease, opacity 0.3s ease; box-sizing: border-box;">
+                                
+                                <div style="background-color: #2c3e50; padding: 12px 15px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; box-sizing: border-box;">
+                                    
+                                    <h3 id="modalTitulo" style="margin: 0; color: #ffffff !important; font-size: 1.1rem; font-weight: bold; font-family: sans-serif; letter-spacing: 0.5px; text-align: left;">Solución del Ejercicio</h3>
+                                    
+                                    <span onclick="cerrarModal()" style="font-size: 24px; font-weight: bold; color: #ffffff !important; cursor: pointer; line-height: 1; padding: 0 5px; transition: transform 0.2s ease; font-family: sans-serif; user-select: none;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">&times;</span>
+                                
+                                </div>
+                                
+                                <pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px; overflow-x: hidden; white-space: pre-wrap; word-break: break-word; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; max-height: 350px; text-align: left; margin-bottom: 0; box-sizing: border-box;"><code id="modalCodigo"></code></pre>
+                            </div>
+                        </div>
+                        <!-- EJERCICIO 2 CORREGIDO -->
+                        <div class="exercise-item" style="height: 90px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>2. Calcular el área de un cuadrado.</p>
+                            <div>
+                                <!-- Vinculamos el botón al ID 'ejercicio2' -->
+                                <button onclick="mostrarSolucion('ejercicio2')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer; transition: background 0.2s ease;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 90px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>3. Convertir minutos a horas.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio3')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer; transition: background 0.2s ease;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 90px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>4. Promedio de 3 notas.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio4')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer; transition: background 0.2s ease;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 90px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>5. Calcular precio final con IVA.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio5')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer; transition: background 0.2s ease;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>6. Convertir dólares (USD) a bolívares (VES).</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio6')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer; transition: background 0.2s ease;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 90px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>7. Calcular el área de un triángulo.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio7')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer; transition: background 0.2s ease;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level-column">
+                        <h3>Nivel Intermedio</h3>
+                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>8. Determinar si un número es Par o Impar.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio8')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>9. Determinar el mayor de dos números enteros.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio9')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>10. Verificar si una persona es mayor de edad.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio10')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                       <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>11. Determinar si un número es positivo, negativo o cero.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio11')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>12. Calcular descuento del 10% si la compra supera los 100$.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio12')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>13. Calcular el IMC y determinar el estado nutricional de una persona.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio13')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 140px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>14. Determinar el día de la semana ingresando un número del 1 al 7 usando switch.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio14')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level-column">
+                        <h3>Nivel Avanzado</h3>
+                        <div class="exercise-item" style="height: 140px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>15. Crear una calculadora básica para realizar operaciones (+, -, *, /) usando switch.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio15')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 140px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>16. Calcular la suma de los primeros N números enteros positivos usando un bucle.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio16')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 115px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>17. Mostrar la tabla de multiplicar de un número entero ingresado por el usuario.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio17')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>18. Validar que un número ingresado sea positivo usando un bucle while.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio18')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>19. Crear un menú de opciones interactivo que se repita usando un bucle do-while.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio19')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                            <p>20. Calcular el factorial de un número entero positivo utilizando un bucle for.</p>
+                            <div>
+                                <button onclick="mostrarSolucion('ejercicio20')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
+                                    Ver Solución
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    <!-- Tarjeta de Actividades de la Docente -->
+        </div></div></div>
+
+<div class="tarjeta-docente-desplegable" 
+     onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 14px rgba(0,0,0,0.15)';" 
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';"
+     style="background: #ffffff; border: none; border-left: 9px solid #ffcc00; border-radius: 11px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px; overflow: hidden; font-family: sans-serif; transition: transform 0.25s ease, box-shadow 0.25s ease;">
+    
+    <div onclick="toggleMenuPrincipal()" style="background: none; border: none; cursor: pointer; position: relative; padding: 20px; user-select: none;">
+        <span style="color: #333333; font-size: 1.1em; font-weight: bold; display: block; text-align: left;">
+            Actividades de la Docente:
+        </span>
+        <svg id="flecha-principal" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); position: absolute; right: 15px; top: 50%; margin-top: -11px;">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+    </div>
+
+    <div id="cuerpo-principal" style="max-height: 0px; overflow: hidden; transition: max-height 0.35s ease;">
+        <div id="interior-principal" style="padding: 0 20px 20px 20px; text-align: left;">
+            <p style="color: #666; margin-top: 10px; margin-bottom: 20px; font-size: 0.95em;">
+                <strong>A continuación se presentan las guías prácticas propuestas por la profesora para el desarrollo de la lógica de programación en C++:</strong> 
+            </p>
+
+            <p style="padding-left: 10px; font-size: 20px;">
+                <strong>Guía #1: Sentencias de Control:</strong> 
+            </p>
+            
+            <div class="lista-ejercicios">
+
+                <div class="ejercicio-item" 
+                     onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                     style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #3c4453; margin-bottom: 15px; background: #fdfdfd; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                    <div onclick="toggleEjercicio('ejercicio-1-content', 'flecha-ej-1')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                        <span style="color: #3c4453; font-weight: bold; font-size: 0.95em;">Ejercicio #1: Validación de Nota de Entrada</span>
+                        <svg id="flecha-ej-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                   
+                    <div id="ejercicio-1-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease;">
+                        <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff;">
+                            <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                <b>Enunciado:</b> Desarrolle un programa en C++ que solicite al usuario la nota final de una asignatura. Utilizando una estructura repetitiva (ciclo do-while), valide que la nota ingresada esté estrictamente en el rango de 0 a 20. Si el usuario ingresa un valor fuera de este rango, el sistema debe mostrar un mensaje de error y volver a pedir la nota de forma indefinida hasta que el dato sea correcto.
+                            </p>
+                            <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; white-space: pre-wrap; font-size: 0.85em; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    float nota;
+
+    // Ciclo do-while para obligar a introducir un dato válido
+    do {
+        cout << "Ingrese la nota final del estudiante (0 - 20): ";
+        cin >> nota;
+
+        if (nota < 0 || nota > 20) {
+            cout << "Error: La nota ingresada no es valida. Intente de nuevo." << endl;
+        }
+    } while (nota < 0 || nota > 20);
+
+    cout << "Nota registrada exitosamente: " << nota << endl;
+    return 0;
+}</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <section>
+                    <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #ffcc00; margin-bottom: 15px; background: #fdfdfd; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+    
+                        <div onclick="toggleEjercicio('ejercicio-2-content', 'flecha-ej-2')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color:  #ffcc00;"><b>Ejercicio #2: Sumatoría de Números Pares</b></span>
+                            <svg id="flecha-ej-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+
+                        <div id="ejercicio-2-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Desarrolle un programa en C++ que solicite al usuario un número entero positivo N y calcule la suma de todos los números pares comprendidos entre 1 y N utilizando una estructura repetitiva (ciclo for).
+                                </p>
+             
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n, suma = 0;
+    cout << "Ingrese un numero entero positivo: ";
+    cin >> n;
+
+    // Ciclo para evaluar y sumar los números pares
+    for (int i = 1; i <= n; i++) {
+        if (i % 2 == 0) {
+            suma += i; // Acumulador
+        }
+    }
+
+    cout << "La suma de los numeros pares es: " << suma << endl;
+    return 0;
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid  #3c4453; margin-bottom: 15px; background: #fdfdfd; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                    
+                        <div onclick="toggleEjercicio('ejercicio-3-content', 'flecha-ej-3')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color:#3c4453; font-weight: bold; font-size: 0.95em;">Ejercicio #3: Cálculo de Factorial</span>
+                            <svg id="flecha-ej-3" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+
+                        <div id="ejercicio-3-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Desarrolle un programa en C++ que lea un número entero positivo y calcule su factorial (N!) utilizando un bucle condicional repetitivo (ciclo while). El programa debe asegurar que el valor ingresado no sea negativo.
+                                </p>
+                                                     
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n;
+    long double factorial = 1; // Permite almacenar números grandes
+    
+    cout << "Ingrese un numero entero positivo: ";
+    cin >> n;
+
+    // Validación por si ingresan un número negativo
+    if (n < 0) {
+        cout << "El factorial de un numero negativo no existe." << endl;
+    } else {
+        int i = 1;
+        while (i <= n) {
+            factorial *= i; // Multiplicador acumulativo
+            i++;
+        }
+        cout << "El factorial de " << n << " es: " << factorial << endl;
+    }
+
+    return 0;
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #ffcc00; margin-bottom: 15px; background: #fdfdfd; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        <div onclick="toggleEjercicio('ejercicio-4-content', 'flecha-ej-4')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color:#ffcc00; font-weight: bold; font-size: 0.95em;">Ejercicio #4: Verificación de Números Primos</span>
+                            <svg id="flecha-ej-4" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div id="ejercicio-4-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Desarrolle un programa en C++ que determine si un número entero positivo ingresado por el usuario es primo o no. Recuerde que un número primo es aquel que solo es divisible exactamente entre 1 y sí mismo.
+                                </p>
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n, divisores = 0;
+    cout << "Ingrese un numero entero positivo: ";
+    cin >> n;
+
+    if (n <= 1) {
+        cout << "El numero no es primo." << endl;
+    } else {
+        // Ciclo para contar cuántos divisores exactos tiene el número
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                divisores++;
+            }
+        }
+
+        if (divisores == 2) {
+            cout << "El numero " << n << " SI es primo." << endl;
+        } else {
+             cout << "El numero " << n << " NO es primo." << endl;
+        }
+    }
+
+    return 0;
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                <section>
+                    <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid  #3c4453; margin-bottom: 15px; background: #fdfdfd; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        <div onclick="toggleEjercicio('ejercicio-5-content', 'flecha-ej-5')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color:  #3c4453; font-weight: bold; font-size: 0.95em;">Ejercicio #5: Serie de Fibonacci</span>
+                            <svg id="flecha-ej-5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                       
+                        <div id="ejercicio-5-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Diseñe un programa en C++ que genere y muestre en pantalla los primeros N términos de la Serie de Fibonacci, donde N es un número entero positivo proporcionado por el usuario.
+                                </p>
+          
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n, t1 = 0, t2 = 1, siguienteTermino = 0;
+
+    cout << "Ingrese la cantidad de terminos a generar: ";
+    cin >> n;
+
+    cout << "Serie de Fibonacci: ";
+
+    for (int i = 1; i <= n; i++) {
+        if(i == 1) {
+            cout << t1 << ", ";
+            continue;
+        }
+        if(i == 2) {
+            cout << t2 << ", ";
+            continue;
+        }
+        
+        siguienteTermino = t1 + t2;
+        t1 = t2;
+        t2 = siguienteTermino;
+         
+        cout << siguienteTermino;
+        if (i < n) {
+            cout << ", ";
+        }
+    }
+    cout << endl;
+    return 0;
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <article>
+                    <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #ffcc00; margin-bottom: 15px; background: #fdfdfd; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        <div onclick="toggleEjercicio('ejercicio-6-content', 'flecha-ej-6')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color: #ffcc00; font-weight: bold; font-size: 0.95em;">Ejercicio #6: Promedio de Números (Centinela)</span>
+                            <svg id="flecha-ej-6" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                       
+                        <div id="ejercicio-6-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Desarrolle un programa en C++ que solicite al usuario ingresar números enteros positivos para calcular su promedio. El programa debe detener la lectura de datos en el momento en que se introduzca un número negativo, mostrando el resultado en pantalla (sin incluir el número negativo en el cálculo).
+                                </p>
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int numero, suma = 0, contador = 0;
+    float promedio;
+
+    cout << "Ingrese numeros positivos (metas uno negativo para terminar):" << endl;
+    
+    while (true) {
+        cin >> numero;
+        if (numero < 0) {
+            break; // Rompe el ciclo si es negativo
+        }
+    
+        suma += numero;
+        contador++;
+    }
+
+    if (contador > 0) {
+        promedio = (float)suma / contador;
+        cout << "El promedio de los numeros es: " << promedio << endl;
+    } else {
+        cout << "No se ingresaron numeros positivos validos." << endl;
+    }
+
+    return 0;
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+      
+                <article>
+                    <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #3c4453;  margin-bottom: 15px; background: #fdfdfd; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        <div onclick="toggleEjercicio('ejercicio-7-content', 'flecha-ej-7')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color: #3c4453;  font-weight: bold; font-size: 0.95em;">Ejercicio #7: Menú de Opciones Interactivo</span>
+                            <svg id="flecha-ej-7" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                       
+                        <div id="ejercicio-7-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Diseñe un programa en C++ que simule un menú interactivo con tres opciones: 1) Saludar, 2) Calcular el doble de un número, y 3) Salir. El programa debe ejecutarse repetidamente utilizando un ciclo do-while y una estructura switch, finalizando únicamente cuando el usuario seleccione la opción 3.
+                                </p>
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int opcion;
+    do {
+        cout << "\n--- MENU INTERACTIVO ---" << endl;
+        cout << "1. Saludar" << endl;
+        cout << "2. Calcular el doble de un numero" << endl;
+        cout << "3. Salir" << endl;
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        switch(opcion) {
+            case 1:
+                cout << "¡Hola! Bienvenido al sistema." << endl;
+                break;
+            case 2:
+                int num;
+                cout << "Ingrese un numero: ";
+                cin >> num;
+                cout << "El doble es: " << num * 2 << endl;
+                break;
+            case 3:
+                cout << "Saliendo del programa..." << endl;
+                break;
+            default:
+                cout << "Opcion no valida. Intente de nuevo." << endl;
+        }
+    } while(opcion != 3);
+
+    return 0;
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid  #ffcc00; margin-bottom: 15px; background: #fdfdfd; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        <div onclick="toggleEjercicio('ejercicio-8-content', 'flecha-ej-8')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color:  #ffcc00; font-weight: bold; font-size: 0.95em;">Ejercicio #8: Determinar Mayor y Menor número</span>
+                            <svg id="flecha-ej-8" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                       
+                        <div id="ejercicio-8-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Desarrolle un programa en C++ que solicite al usuario la cantidad total de números que desea introducir. Luego, mediante un ciclo, lea cada número y determine de forma automática cuál de todos los valores ingresados fue el mayor y cuál fue el menor.
+                                </p>
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int cantidad, numero, mayor, menor;
+
+    cout << "Ingrese la cantidad de numeros a evaluar: ";
+    cin >> cantidad;
+
+    if (cantidad <= 0) {
+        cout << "Cantidad no valida." << endl;
+        return 0;
+    }
+
+    // Leer el primer numero para inicializar el mayor y menor
+    cout << "Ingrese el numero 1: ";
+    cin >> numero;
+    mayor = numero;
+    menor = numero;
+
+    // Ciclo para evaluar el resto de los números
+    for (int i = 2; i <= cantidad; i++) {
+        cout << "Ingrese el numero " << i << ": ";
+        cin >> numero;
+
+        if (numero > mayor) {
+            mayor = numero;
+        }
+        if (numero < menor) {
+            menor = numero;
+        }
+    }
+
+    cout << "El numero MAYOR es: " << mayor << endl;
+    cout << "El numero MENOR es: " << menor << endl;
+
+    return 0;
+}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!--GUIA NUMERO 2 DE LOS EJERCICIOS-->
+                <p style="padding-left: 10px; font-size: 20px; margin-top: 30px;">
+                <strong>Guía #2: Estructuras de Datos y Arreglos:</strong> 
+                </p>
+                <div class="lista-ejercicios-guia2" style="display: flex; flex-direction: column; gap: 15px;">
+                </div>
+                <!--PRIMER EJERCICIO DE LA GUIA #NR2-->
+            <article>
+                <div class="ejercicio-item" 
+                     onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                     style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid  #3c4453; margin: 0 auto 15px auto; background: #fdfdfd; overflow: hidden; box-sizing: border-box; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                    
+                    <div onclick="toggleEjercicio('ejercicio-g2-1-content', 'flecha-ej-g2-1')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                        <span style="color: #3c4453; font-weight: bold; font-size: 0.95em;">Ejercicio #1: Almacenamiento y Promedio de un Vector</span>
+                        <svg id="flecha-ej-g2-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                   
+                    <div id="ejercicio-g2-1-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%;">
+                        <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff; width: 100%; box-sizing: border-box;">
+                            <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                <b>Enunciado:</b> Desarrolle un programa en C++ que permita definir un arreglo unidimensional (vector) para almacenar 5 números enteros introducidos por el usuario. El sistema debe calcular la suma de todos los elementos, determinar el promedio general y, finalmente, mostrar en pantalla el contenido completo del vector junto con los resultados obtenidos.
+                            </p>
+                            <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left; max-width: 100%; box-sizing: border-box;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int TAMANO = 5;
+    int numeros[TAMANO];
+    int suma = 0;
+    float promedio;
+
+    cout << "--- INGRESO DE DATOS AL VECTOR ---" << endl;
+    // Ciclo para leer y almacenar los datos en el arreglo
+    for (int i = 0; i < TAMANO; i++) {
+        cout << "Ingrese el valor para la posicion [" << i << "]: ";
+        cin >> numeros[i];
+        suma += numeros[i]; // Va acumulando la suma directamente
+    }
+
+    // Cálculo del promedio
+    promedio = (float)suma / TAMANO;
+
+    cout << "\n--- DATOS ALMACENADOS ---" << endl;
+    // Ciclo para recorrer y mostrar los elementos del vector
+    for (int i = 0; i < TAMANO; i++) {
+        cout << "Posicion [" << i << "] = " << numeros[i] << endl;
+    }
+
+    cout << "\nResultados:" << endl;
+    cout << "-> La suma total es: " << suma << endl;
+    cout << "-> El promedio es: " << promedio << endl;
+
+    return 0;
+}</pre>
+            </article>
+            <!--SEGUNDO EJERCICIO DE LA GUIA #NR2-->
+            <article>
+                <div class="ejercicio-item" 
+                     onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                     style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #ffcc00; margin: 0 auto 15px auto; background: #fdfdfd; overflow: hidden; box-sizing: border-box; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                    
+                    <div onclick="toggleEjercicio('ejercicio-g2-2-content', 'flecha-ej-g2-2')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                        <span style="color: #ffcc00; font-weight: bold; font-size: 0.95em;">Ejercicio #2: Búsqueda de un Elemento en un Arreglo</span>
+                        <svg id="flecha-ej-g2-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                   
+                    <div id="ejercicio-g2-2-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%;">
+                        <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff; width: 100%; box-sizing: border-box;">
+                            <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                <b>Enunciado:</b> Escriba un programa en C++ que inicialice un arreglo con 8 números enteros previamente definidos. Luego, solicite al usuario que ingrese un número a buscar. El programa deberá recorrer el arreglo e indicar si el número se encuentra almacenado en él y, en caso afirmativo, especificar en qué posición (índice) se localizó por primera vez.
+                            </p>
+                            <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left; max-width: 100%; box-sizing: border-box;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    // Inicialización del arreglo con valores fijos
+    int numeros[8] = {14, 25, 39, 42, 5 scan, 68, 71, 85};
+    int buscar;
+    bool encontrado = false;
+    int posicion = -1;
+
+    cout << "Ingrese el numero entero que desea buscar en el arreglo: ";
+    cin >> buscar;
+
+    // Ciclo para recorrer el arreglo y realizar la búsqueda lineal
+    for (int i = 0; i < 8; i++) {
+        if (numeros[i] == buscar) {
+            encontrado = true;
+            posicion = i; // Guarda la posición donde se encontró
+            break;        // Rompe el ciclo ya que se localizó el elemento
+        }
+    }
+
+    // Mostrar resultados finales
+    if (encontrado) {
+        cout << "¡Elemento encontrado! El numero " << buscar << " esta en la posicion [" << posicion << "]." << endl;
+    } else {
+        cout << "El numero " << buscar << " no se encuentra en el arreglo." << endl;
+    }
+
+    return 0;
+}</pre>
+            </article>
+            <!--GUIA DE EJERCICIOS #NR3-->
+            <article>
+                <div class="ejercicio-item" 
+                     onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                     style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #3c4453; margin: 0 auto 15px auto; background: #fdfdfd; overflow: hidden; box-sizing: border-box; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                    
+                    <div onclick="toggleEjercicio('ejercicio-g2-3-content', 'flecha-ej-g2-3')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                        <span style="color: #3c4453; font-weight: bold; font-size: 0.95em;">Ejercicio #3: Elemento Mayor y Menor en un Vector</span>
+                        <svg id="flecha-ej-g2-3" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                   
+                    <div id="ejercicio-g2-3-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%;">
+                        <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff; width: 100%; box-sizing: border-box;">
+                            <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                <b>Enunciado:</b> Desarrolle un programa en C++ que solicite al usuario definir el tamaño de un arreglo unidimensional e ingrese sus respectivos elementos numéricos. El sistema deberá recorrer el arreglo para determinar automáticamente cuál es el valor máximo y cuál es el valor mínimo almacenado, mostrando ambos números junto con sus correspondientes posiciones e índices de ubicación.
+                            </p>
+                            <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left; max-width: 100%; box-sizing: border-box;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int tamano;
+
+    cout << "Ingrese la cantidad de elementos para el arreglo: ";
+    cin >> tamano;
+
+    if (tamano <= 0) {
+        cout << "Tamaño no valido." << endl;
+        return 0;
+    }
+
+    int numeros[tamano];
+
+    // Lectura de los elementos del arreglo
+    for (int i = 0; i < tamano; i++) {
+        cout << "Ingrese el valor para la posicion [" << i << "]: ";
+        cin >> numeros[i];
+    }
+
+    // Inicializamos las variables con el primer elemento del vector
+    int mayor = numeros[0];
+    int menor = numeros[0];
+    int posMayor = 0;
+    int posMenor = 0;
+
+    // Ciclo para comparar y encontrar los valores extremos y sus posiciones
+    for (int i = 1; i < tamano; i++) {
+        if (numeros[i] > mayor) {
+            mayor = numeros[i];
+            posMayor = i;
+        }
+        if (numeros[i] < menor) {
+            menor = numeros[i];
+            posMenor = i;
+        }
+    }
+
+    // Mostrar los resultados obtenidos
+    cout << "\n--- REPORTE DE VALORES EXTREMOS ---" << endl;
+    cout << "-> El numero MAYOR es: " << mayor << " y se encuentra en la posicion [" << posMayor << "]." << endl;
+    cout << "-> El numero MENOR es: " << menor << " y se encuentra en la posicion [" << posMenor << "]." << endl;
+
+    return 0;
+}</pre>
+            </article>
+            <!--GUIA DE EJERCICIOS #NR4-->
+            <article>
+                <div class="ejercicio-item" 
+                     onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                     style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #ffcc00;margin: 0 auto 15px auto; background: #fdfdfd; overflow: hidden; box-sizing: border-box; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                    
+                    <div onclick="toggleEjercicio('ejercicio-g2-4-content', 'flecha-ej-g2-4')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                        <span style="color: #ffcc00; font-weight: bold; font-size: 0.95em;">Ejercicio #4: Invertir los Elementos de un Vector</span>
+                        <svg id="flecha-ej-g2-4" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                   
+                    <div id="ejercicio-g2-4-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%;">
+                        <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff; width: 100%; box-sizing: border-box;">
+                            <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                <b>Enunciado:</b> Desarrolle un programa en C++ que solicite al usuario ingresar 6 números enteros para llenar un arreglo. Posteriormente, el programa debe invertir el orden de los elementos dentro del mismo arreglo (sin usar un arreglo auxiliar) utilizando un algoritmo de intercambio, y finalmente mostrar el vector modificado en pantalla.
+                            </p>
+                            <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left; max-width: 100%; box-sizing: border-box;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int TAMANO = 6;
+    int numeros[TAMANO];
+    int aux;
+
+    cout << "--- INGRESO DE ELEMENTOS ---" << endl;
+    for (int i = 0; i < TAMANO; i++) {
+        cout << "Ingrese el valor para la posicion [" << i << "]: ";
+        cin >> numeros[i];
+    }
+
+    // Algoritmo para invertir el arreglo recorriendo hasta la mitad
+    for (int i = 0; i < TAMANO / 2; i++) {
+        // Intercambio de posiciones usando la variable auxiliar
+        aux = numeros[i];
+        numeros[i] = numeros[TAMANO - 1 - i];
+        numeros[TAMANO - 1 - i] = aux;
+    }
+
+    cout << "\n--- VECTOR INVERTIDO ---" << endl;
+    for (int i = 0; i < TAMANO; i++) {
+        cout << "Posicion [" << i << "] = " << numeros[i] << endl;
+    }
+
+    return 0;
+}</pre>
+            </article>
+            <!--GUIA DE EJERCICIOS #NR5-->
+            <article>
+                <div class="ejercicio-item" 
+                     onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                     style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #3c4453; margin: 0 auto 15px auto; background: #fdfdfd; overflow: hidden; box-sizing: border-box; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                    
+                    <div onclick="toggleEjercicio('ejercicio-g2-5-content', 'flecha-ej-g2-5')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                        <span style="color: #3c4453; font-weight: bold; font-size: 0.95em;">Ejercicio #5: Separación de Números Pares e Impares</span>
+                        <svg id="flecha-ej-g2-5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                   
+                    <div id="ejercicio-g2-5-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%;">
+                        <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff; width: 100%; box-sizing: border-box;">
+                            <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                <b>Enunciado:</b> Desarrolle un programa en C++ que solicite al usuario ingresar 10 números enteros para rellenar un arreglo principal. El sistema debe analizar cada elemento y almacenar los números pares en un segundo arreglo, y los números impares en un tercer arreglo. Al finalizar, se debe mostrar el contenido de los dos nuevos arreglos resultantes junto con la cantidad de elementos que posee cada uno.
+                            </p>
+                            <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left; max-width: 100%; box-sizing: border-box;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int TOTAL = 10;
+    int arregloOriginal[TOTAL];
+    int pares[TOTAL], impares[TOTAL];
+    int contPares = 0, contImpares = 0;
+
+    cout << "--- INGRESO DE 10 NUMEROS ---" << endl;
+    for (int i = 0; i < TOTAL; i++) {
+        cout << "Ingrese el valor [" << i << "]: ";
+        cin >> arregloOriginal[i];
+
+        // Clasificación y almacenamiento selectivo
+        if (arregloOriginal[i] % 2 == 0) {
+            pares[contPares] = arregloOriginal[i];
+            contPares++; // Incrementa el índice del arreglo de pares
+        } else {
+            impares[contImpares] = arregloOriginal[i];
+            contImpares++; // Incrementa el índice del arreglo de impares
+        }
+    }
+
+    // Mostrar resultados finales
+    cout << "\n--- ELEMENTOS PARES REGISTRADOS (" << contPares << ") ---" << endl;
+    if (contPares == 0) {
+        cout << "No se ingresaron numeros pares." << endl;
+    } else {
+        for (int i = 0; i < contPares; i++) {
+            cout << "Pares [" << i << "] = " << pares[i] << endl;
+        }
+    }
+
+    cout << "\n--- ELEMENTOS IMPARES REGISTRADOS (" << contImpares << ") ---" << endl;
+    if (contImpares == 0) {
+        cout << "No se ingresaron numeros impares." << endl;
+    } else {
+        for (int i = 0; i < contImpares; i++) {
+            cout << "Impares [" << i << "] = " << impares[i] << endl;
+        }
+    }
+
+    return 0;
+}</pre>
+            </article>
+            <!--GUIA DE EJERCICIOS #NR6-->
+            <article>
+               <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #ffcc00; margin: 0 auto 15px auto; background: #fdfdfd; overflow: hidden; box-sizing: border-box; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        
+                        <div onclick="toggleEjercicio('ejercicio-g2-6-content', 'flecha-ej-g2-6')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color: #ffcc00; font-weight: bold; font-size: 0.95em;">Ejercicio #6: Declaración y Lectura de una Matriz 3x3</span>
+                            <svg id="flecha-ej-g2-6" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                       
+                        <div id="ejercicio-g2-6-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff; width: 100%; box-sizing: border-box;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Desarrolle un programa en C++ que declare una estructura de datos bidimensional (matriz) de tamaño 3x3 para almacenar números enteros. El programa debe solicitar al usuario los valores para cada una de las celdas especificando su fila y columna. Al finalizar el ingreso de datos, el sistema debe imprimir la matriz en pantalla en formato de tabla perfectamente alineada.
+                                </p>
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left; max-width: 100%; box-sizing: border-box;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int FILAS = 3;
+    const int COLUMNAS = 3;
+    int matriz[FILAS][COLUMNAS];
+
+    cout << "--- INGRESO DE DATOS A LA MATRIZ 3x3 ---" << endl;
+    
+    // Bucles anidados para la lectura de datos (Fila por Fila)
+    for (int i = 0; i < FILAS; i++) {
+        for (int j = 0; j < COLUMNAS; j++) {
+            cout << "Ingrese el valor para la celda [" << i << "][" << j << "]: ";
+            cin >> matriz[i][j];
+        }
+    }
+
+    cout << "\n--- MATRIZ RESULTANTE INTERACTIVA ---" << endl;
+    
+    // Bucles anidados para mostrar la estructura en formato de tabla
+    for (int i = 0; i < FILAS; i++) {
+        cout << "\t[ ";
+        for (int j = 0; j < COLUMNAS; j++) {
+            cout << matriz[i][j];
+            
+            // Estética: Agrega un espacio separador si no es la última columna
+            if (j < COLUMNAS - 1) {
+                cout << "   ";
+            }
+        }
+        cout << " ]" << endl;
+    }
+
+    return 0;
+}</pre>
+            </article>
+            <!--GUIA DE EJERCICIOS #NR7-->
+            <article>
+                <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #3c4453; margin: 0 auto 15px auto; background: #fdfdfd; overflow: hidden; box-sizing: border-box; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        
+                        <div onclick="toggleEjercicio('ejercicio-g2-7-content', 'flecha-ej-g2-7')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color: #3c4453; font-weight: bold; font-size: 0.95em;">Ejercicio #7: Suma de la Diagonal Principal de una Matriz</span>
+                            <svg id="flecha-ej-g2-7" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                       
+                        <div id="ejercicio-g2-7-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff; width: 100%; box-sizing: border-box;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Desarrolle un programa en C++ que declare e inicialice una matriz cuadrada de 4x4 con números enteros. El sistema debe recorrer la matriz para calcular de manera exclusiva la suma de los elementos que forman la diagonal principal (aquellas celdas donde el número de fila es igual al número de columna). Al final, muestre la matriz completa y el resultado de la sumatoria.
+                                </p>
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; overflow-x: auto; line-height: 1.4; text-align: left; max-width: 100%; box-sizing: border-box;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int TAMANO = 4;
+    // Declaración e inicialización directa de una matriz 4x4
+    int matriz[TAMANO][TAMANO] = {
+        {5,  8,  2,  1},
+        {3,  9,  4,  7},
+        {6,  2,  8,  3},
+        {1,  5,  0,  4}
+    };
+    int sumaDiagonal = 0;
+
+    cout << "--- MATRIZ COMPLETA 4x4 ---" << endl;
+    for (int i = 0; i < TAMANO; i++) {
+        cout << "\t[ ";
+        for (int j = 0; j < TAMANO; j++) {
+            cout << matriz[i][j];
+            if (j < TAMANO - 1) cout << "   ";
+            
+            // Condición para identificar la diagonal principal (i == j)
+            if (i == j) {
+                sumaDiagonal += matriz[i][j]; // Acumulador selectivo
+            }
+        }
+        cout << " ]" << endl;
+    }
+
+    // Mostrar el resultado del cálculo
+    cout << "\nResultados del Analisis:" << endl;
+    cout << "-> Los elementos evaluados son: ";
+    for (int i = 0; i < TAMANO; i++) {
+        cout << matriz[i][i];
+        if (i < TAMANO - 1) cout << ", ";
+    }
+    cout << "\n-> La suma total de la diagonal principal es: " << sumaDiagonal << endl;
+
+    return 0;
+}</pre>
+            </article>
+            <!--GUIA DE EJERCICIOS #NR8-->
+            <article>
+                <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #ffcc00; margin: 0 auto 15px auto; background: #fdfdfd; overflow: hidden; box-sizing: border-box; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        
+                        <div onclick="toggleEjercicio('ejercicio-g2-8-content', 'flecha-ej-g2-8')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color: #ffcc00; font-weight: bold; font-size: 0.95em;">Ejercicio #8: Cálculo de Bonificación por Ventas</span>
+                            <svg id="flecha-ej-g2-8" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                       
+                        <div id="ejercicio-g2-8-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff; width: 100%; box-sizing: border-box;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Elabore un algoritmo que permita ingresar el monto de venta alcanzado por un vendedor durante el mes, luego de calcular la bonificación que le corresponde sabiendo que: si el monto está entre 1000 y 5000 el bono es de 3%, si el monto está entre 5000 y 10000 el bono es de 5%, si el monto está entre 10000 y 20000 el bono es 8% y si el monto es de 20000 o más el bono es de 10%[cite: 21].
+                                </p>
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; white-space: pre-wrap; margin: 0; white-space: pre-wrap; word-break: break-all; line-height: 1.4; text-align: left; max-width: 100%; box-sizing: border-box;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    float montoVenta, porcentajeBono = 0, montoBono = 0, totalPagar = 0;
+
+    cout << "Ingrese el monto de venta alcanzado por el vendedor (Bs): ";
+    cin >> montoVenta;
+
+    // Validación y asignación de rangos de bonificación utilizando condiciones anidadas
+    if (montoVenta < 1000) {
+        porcentajeBono = 0; // No alcanza el mínimo para bonificación
+    } else if (montoVenta >= 1000 && montoVenta < 5000) {
+        porcentajeBono = 0.03; // 3% Bono
+    } else if (montoVenta >= 5000 && montoVenta < 10000) {
+        porcentajeBono = 0.05; // 5% Bono
+    } else if (montoVenta >= 10000 && montoVenta < 20000) {
+        porcentajeBono = 0.08; // 8% Bono
+    } else {
+        porcentajeBono = 0.10; // 10% Bono (20000 o más)
+    }
+
+    // Cálculos financieros finales
+    montoBono = montoVenta * porcentajeBono;
+    totalPagar = montoVenta + montoBono;
+
+    cout << "\n--- REPORTE DE BONIFICACIÓN ---" << endl;
+    cout << "-> Monto de venta registrado: " << montoVenta << " Bs." << endl;
+    cout << "-> Porcentaje de bono aplicado: " << (porcentajeBono * 100) << "%" << endl;
+    cout << "-> Monto neto por concepto de bono: " << montoBono << " Bs." << endl;
+    cout << "-> Total general a percibir: " << totalPagar << " Bs." << endl;
+
+    return 0;
+}</pre>
+            </article>
+            <!--GUIA DE EJERCICIOS #NR9-->
+            <article>
+                <div class="ejercicio-item" 
+                         onmouseover="this.style.transform='scale(1.015)'; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.08)';" 
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+                         style="border-radius: 8px; border: 1px solid #eee; border-left: 4px solid #3c4453; margin: 0 auto 15px auto; background: #fdfdfd; overflow: hidden; box-sizing: border-box; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        
+                        <div onclick="toggleEjercicio('ejercicio-g2-9-content', 'flecha-ej-g2-9')" style="padding: 15px; cursor: pointer; position: relative; display: flex; align-items: center; user-select: none;">
+                            <span style="color: #3c4453; font-weight: bold; font-size: 0.95em;">Ejercicio #9: Análisis Financiero y Distribución de Presupuesto</span>
+                            <svg id="flecha-ej-g2-9" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease; transform: rotate(0deg); margin-left: auto;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                       
+                        <div id="ejercicio-g2-9-content" style="max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%;">
+                            <div style="padding: 15px; border-top: 1px solid #eee; background: #ffffff; width: 100%; box-sizing: border-box;">
+                                <p style="color: #333; font-size: 0.9em; margin-bottom: 15px;">
+                                    <b>Enunciado:</b> Un empresario debe decidir qué hacer si, actualmente su capital se encuentra en saldo negativo entonces, pedirá un préstamo bancario para que su nuevo saldo sea de 10000 Bs. Si su capital tiene actualmente un saldo positivo pedirá un préstamo bancario para tener un nuevo saldo de 20000 Bs. Pero si su capital tiene actualmente un saldo superior a los 20000 Bs no pedirá un préstamo. Posteriormente, repartirá su presupuesto de la siguiente manera: 5000 Bs para equipo de cómputo, 2000 Bs para mobiliario. Con el restante de su presupuesto repartirá la mitad para la compra de insumos y la otra para otorgar incentivos al personal. Muestre por pantalla cuánto le quedó para la compra de insumos y cuánto le quedó para otorgar incentivos al personal[cite: 146, 147, 148, 149, 150, 151, 152, 153].
+                                </p>
+                                <pre style="background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85em; margin: 0; overflow-x: auto; white-space: pre-wrap; line-height: 1.4; text-align: left; max-width: 100%; box-sizing: border-box;">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    float capitalActual, presupuestoTotal;
+    float prestamo = 0;
+    float equipoComputo = 5000;
+    float mobiliario = 2000;
+    float restante, insumos, incentivos;
+
+    cout << "Ingrese el capital actual de la empresa (Bs): ";
+    cin >> capitalActual;
+
+    // Evaluación del capital para determinar el préstamo y el presupuesto final
+    if (capitalActual < 0) {
+        presupuestoTotal = 10000;
+        prestamo = presupuestoTotal - capitalActual;
+    } else if (capitalActual <= 20000) {
+        presupuestoTotal = 20000;
+        prestamo = presupuestoTotal - capitalActual;
+    } else {
+        presupuestoTotal = capitalActual; // No solicita préstamo
+    }
+
+    cout << "\n--- BALANCE FINANCIERO ---" << endl;
+    cout << "-> Prestamo solicitado: " << prestamo << " Bs." << endl;
+    cout << "-> Presupuesto total: " << presupuestoTotal << " Bs." << endl;
+
+    // Cálculo del presupuesto restante para las áreas variables
+    restante = presupuestoTotal - (equipoComputo + mobiliario);
+
+    if (restante < 0) {
+        cout << "\nEl presupuesto no alcanza para cubrir los gastos fijos de computo y mobiliario." << endl;
+    } else {
+        insumos = restante / 2;
+        incentivos = restante / 2;
+
+        cout << "\n--- REPARTICIÓN DEL PRESUPUESTO ---" << endl;
+        cout << "-> Equipo de computo: " << equipoComputo << " Bs." << endl;
+        cout << "-> Mobiliario: " << mobiliario << " Bs." << endl;
+        cout << "-> Compra de insumos: " << insumos << " Bs." << endl;
+        cout << "-> Incentivos al personal: " << incentivos << " Bs." << endl;
+    }
+
+    return 0;
+}</pre>
+            </article>
+        </div> 
+    </div>
+</div>
+    
+<div class="video-grid">
+    <div class="video-grid">
+    
+    <div class="video-card">
+        <div class="iframe-container">
+            <iframe 
+                src="https://www.youtube.com/embed/qzFKEt1JGwc?origin=https://localhost&widgetrefer=https://localhost" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                sandbox="allow-scripts opacity allow-same-origin allow-presentation; allow-popups"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p>1. Hola Mundo en C++</p>
+        <a href="https://www.youtube.com/watch?v=qzFKEt1JGwc" target="_blank" style="display:inline-block; margin-top:10px; padding:5px 10px; background:#D32F2F; color:white; text-decoration:none; border-radius:5px; font-size:0.7rem;">ABRIR EN YOUTUBE</a>
+    </div>
+
+    <div class="video-card">
+        <div class="iframe-container">
+            <iframe 
+                src="https://www.youtube.com/embed/99mmpf7LsF4?origin=https://localhost&widgetrefer=https://localhost" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                sandbox="allow-scripts opacity allow-same-origin allow-presentation; allow-popups"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p>2. Funciones y Declaración</p>
+        <a href="https://www.youtube.com/watch?v=99mmpf7LsF4" target="_blank" style="display:inline-block; margin-top:10px; padding:5px 10px; background:#D32F2F; color:white; text-decoration:none; border-radius:5px; font-size:0.7rem;">ABRIR EN YOUTUBE</a>
+    </div>
+
+    <div class="video-card">
+        <div class="iframe-container">
+            <iframe 
+                src="https://www.youtube.com/embed/jS6wb263CIM?origin=https://localhost&widgetrefer=https://localhost" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                sandbox="allow-scripts opacity allow-same-origin allow-presentation; allow-popups"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p>3. Curso C++ Completo 2026</p>
+        <a href="https://www.youtube.com/watch?v=jS6wb263CIM" target="_blank" style="display:inline-block; margin-top:10px; padding:5px 10px; background:#D32F2F; color:white; text-decoration:none; border-radius:5px; font-size:0.7rem;">ABRIR EN YOUTUBE</a>
+    </div>
+
+</div>
+ 
+    
+</main>
+
+    <div class="modal-overlay" id="calcModal">
+        <div class="calculator">
+            <div class="calc-display" id="display">0</div>
+            <div class="calc-buttons">
+                <button class="ac" onclick="clearD()">AC</button>
+                <button class="op" onclick="press('/')">/</button>
+                <button class="op" onclick="press('*')">×</button>
+                <button class="op" onclick="del()">←</button>
+                
+                <button onclick="press('7')">7</button>
+                <button onclick="press('8')">8</button>
+                <button onclick="press('9')">9</button>
+                <button class="op" onclick="press('-')">-</button>
+                
+                <button onclick="press('4')">4</button>
+                <button onclick="press('5')">5</button>
+                <button onclick="press('6')">6</button>
+                <button class="op" onclick="press('+')">+</button>
+                
+                <button onclick="press('1')">1</button>
+                <button onclick="press('2')">2</button>
+                <button onclick="press('3')">3</button>
+                <button class="eq" onclick="solve()">=</button>
+                
+                <button onclick="press('0')" style="grid-column: span 2;">0</button>
+                <button onclick="press('.')">.</button>
+                
+                <button class="btn-cerrar" onclick="closeCalc()">CERRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Portal IUPTAIET - San Juan de Colón</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <div id="miModalSolucion" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); backdrop-filter: blur(3px); justify-content: center; align-items: center;">
+        <div style="background-color: #ffffff; padding: 20px; border-radius: 12px; width: 90%; max-width: 600px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); position: relative; font-family: sans-serif;">
+            
+            <span onclick="cerrarModal()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; font-weight: bold; color: #666; cursor: pointer;">&times;</span>
+            
+            <h3 id="modalTitulo" style="margin-top: 0; color: #333; border-bottom: 2px solid #D32F2F; padding-bottom: 8px; font-size: 1.2rem;">Solución del Ejercicio</h3>
+            
+            <pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; max-height: 350px; text-align: left; margin-bottom: 0;"><code id="modalCodigo"></code></pre>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
