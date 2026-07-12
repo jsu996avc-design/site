@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Algoritmica y Progrmacion</title>
+    <title>Pagina de Algoritmica y Programacion</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -74,10 +74,67 @@
             </div>
         </div>
 
-        <div class="card"><div class="card-header" onclick="toggleCard(this)">Unidad 4: Paradigmas de la programación <div class="arrow"></div></div><div class="card-content">En espera de información.</div></div>
-        <div class="card"><div class="card-header" onclick="toggleCard(this)">Unidad 5: Programación estructurada <div class="arrow"></div></div><div class="card-content">En espera de información.</div></div>
-        <div class="card"><div class="card-header" onclick="toggleCard(this)">Unidad 6: Programación modular <div class="arrow"></div></div><div class="card-content">En espera de información.</div></div>
-        <div class="card"><div class="card-header" onclick="toggleCard(this)">Unidad 7: Tratamiento de cadenas de caracteres <div class="arrow"></div></div><div class="card-content">En espera de información.</div></div>
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">Unidad 4: Estructuras de Control Secuenciales y Selectivas <div class="arrow"></div></div>
+            <div class="card-content">
+                <p>Las estructuras de control determinan el flujo de ejecución de un programa informático, permitiendo romper la linealidad pura de las instrucciones basadas en condiciones lógicas.</p>
+                
+                <h4 style="margin-top: 15px; color: #2c3e50; border-left: 3px solid #D32F2F; padding-left: 8px;">1. Estructuras Secuenciales</h4>
+                <p>Es la forma más simple de flujo donde las instrucciones se ejecutan de manera lineal, una detrás de otra, en el orden estricto en que aparecen en el código fuente. No existen bifurcaciones ni saltos. Involucra principalmente operaciones de asignación, lectura de datos por teclado (entrada) y escritura de resultados en pantalla (salida).</p>
+                
+                <h4 style="margin-top: 15px; color: #2c3e50; border-left: 3px solid #D32F2F; padding-left: 8px;">2. Estructuras Selectivas (Condicionales)</h4>
+                <p>Permiten al programa evaluar una expresión lógica (o condición) y, en función de si el resultado es verdadero o falso, tomar un camino de ejecución u otro.</p>
+                <ul>
+                    <li><strong>Selectiva Simple (if):</strong> Evalúa una condición. Si es verdadera, ejecuta un bloque de instrucciones; si es falsa, lo ignora y continúa con la secuencia lineal.</li>
+                    <li><strong>Selectiva Doble (if-else):</strong> Ofrece dos caminos excluyentes. Si la condición se cumple, se ejecuta el bloque del <code>if</code>; de lo contrario (si es falsa), se ejecuta obligatoriamente el bloque del <code>else</code>.</li>
+                    <li><strong>Selectiva Múltiple (switch):</strong> Evalúa una variable con múltiples valores constantes posibles (casos). Es ideal para menús interactivos, evitando anidamientos complejos de <code>if-else</code>. Utiliza la palabra clave <code>break</code> para salir de la estructura tras ejecutar el caso correspondiente.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">Unidad 5: Estructuras de Control Repetitivas <div class="arrow"></div></div>
+            <div class="card-content">
+                <p>Las estructuras repetitivas, también conocidas como bucles o ciclos, permiten ejecutar un bloque de instrucciones múltiples veces mientras se mantenga activa una determinada condición lógica.</p>
+                
+                <h4 style="margin-top: 15px; color: #2c3e50; border-left: 3px solid #D32F2F; padding-left: 8px;">1. Bucle 'for' (Ciclo Determinado)</h4>
+                <p>Se utiliza principalmente cuando se conoce de antemano el número exacto de veces que se debe repetir el ciclo. Su sintaxis agrupa tres elementos en una sola línea: la inicialización de una variable contador, la condición de parada y el incremento/decremento algebraico de dicho contador.</p>
+                
+                <h4 style="margin-top: 15px; color: #2c3e50; border-left: 3px solid #D32F2F; padding-left: 8px;">2. Bucle 'while' (Ciclo Indeterminado - Pre-prueba)</h4>
+                <p>Se ejecuta <em>mientras</em> una condición sea verdadera. Evalúa la condición lógica al principio de cada vuelta; si desde el inicio la condición es falsa, el bloque interno jamás se ejecuta. Es fundamental asegurar que la variable de control cambie dentro del ciclo para evitar bucles infinitos.</p>
+                
+                <h4 style="margin-top: 15px; color: #2c3e50; border-left: 3px solid #D32F2F; padding-left: 8px;">3. Bucle 'do-while' (Ciclo Indeterminado - Post-prueba)</h4>
+                <p>A diferencia del <code>while</code> tradicional, este ciclo evalúa la condición al final de la estructura. Esto garantiza que las instrucciones internas se ejecuten <strong>al menos una vez</strong>, sin importar si la condición es verdadera o falsa al principio. Es muy utilizado en la validación de datos ingresados por el usuario.</p>
+            </div>
+        </div>
+        <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">Unidad 6: Estructuras de Datos Estáticas <div class="arrow"></div></div>
+            <div class="card-content">
+                <p>Un arreglo es una estructura de datos homogénea y estática que permite almacenar una colección de elementos del mismo tipo bajo un único nombre de variable. Son estáticos porque su tamaño debe ser definido al compilar y no puede cambiar durante la ejecución.</p>
+                
+                <h4 style="margin-top: 15px; color: #2c3e50; border-left: 3px solid #D32F2F; padding-left: 8px;">1. Arreglos Unidimensionales (Vectores)</h4>
+                <p>Representan una lista lineal de datos indexados. En C++, los índices de acceso comienzan estrictamente en la posición <code>0</code> y terminan en <code>N-1</code> (donde N es el tamaño total). Se recorren eficientemente utilizando un solo bucle <code>for</code>.</p>
+                
+                <h4 style="margin-top: 15px; color: #2c3e50; border-left: 3px solid #D32F2F; padding-left: 8px;">2. Arreglos Bidimensionales (Matrices)</h4>
+                <p>Organizan la información en una estructura cuadriculada con filas y columnas (dos dimensiones). Para acceder a un elemento en particular, se deben especificar dos índices coordinados: el primero para la fila y el segundo para la columna (ej. <code>matriz[i][j]</code>). Su manipulación estándar requiere el uso de bucles anidados.</p>
+            </div>
+        </div>
+        <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">Unidad 7: Tratamiento de Cadenas de Caracteres <div class="arrow"></div></div>
+            <div class="card-content">
+                <p>Las cadenas de caracteres representan secuencias de texto. En la programación orientada a objetos en C++, se procesan principalmente mediante dos enfoques técnicos diferentes:</p>
+                
+                <h4 style="margin-top: 15px; color: #2c3e50; border-left: 3px solid #D32F2F; padding-left: 8px;">1. Cadenas de estilo C (Vectores de tipo char)</h4>
+                <p>Se manejan tradicionalmente como un arreglo unidimensional de tipo <code>char</code> que finaliza obligatoriamente con el carácter especial nulo <code>'\0'</code>. Este carácter le avisa al compilador dónde termina el texto en memoria.</p>
+                
+                <h4 style="margin-top: 15px; color: #2c3e50; border-left: 3px solid #D32F2F; padding-left: 8px;">2. La clase 'string' de C++</h4>
+                <p>Pertenece a la biblioteca estándar (<code>#include &lt;string&gt;</code>). Proporciona un manejo de texto moderno, dinámico y seguro, abstrayendo al programador de la gestión manual de arreglos. Permite realizar operaciones complejas de manera sencilla, tales como:</p>
+                <ul>
+                    <li><strong>Concatenación:</strong> Unir textos directamente utilizando el operador de suma algebraico (<code>+</code>).</li>
+                    <li><strong>Comparación:</strong> Evaluar textos usando operadores relacionales comunes (<code>==</code>, <code>!=</code>, <code>&lt;</code>).</li>
+                    <li><strong>Funciones nativas útiles:</strong> Métodos avanzados incorporados como <code>.length()</code> o <code>.size()</code> para obtener la longitud, y <code>.substr()</code> para extraer subcadenas específicas de un texto completo.</li>
+                </ul>
+            </div>
+        </div>
 
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Banco de Prácticas (20 Ejercicios Resueltos) <div class="arrow"></div></div>
@@ -110,7 +167,7 @@
                             </div>
                         </div>
                         <!-- EJERCICIO 2 CORREGIDO -->
-                        <div class="exercise-item" style="height: 90px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 100px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>2. Calcular el área de un cuadrado.</p>
                             <div>
                                 <!-- Vinculamos el botón al ID 'ejercicio2' -->
@@ -135,7 +192,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="exercise-item" style="height: 90px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 100px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>5. Calcular precio final con IVA.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio5')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer; transition: background 0.2s ease;">
@@ -151,7 +208,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="exercise-item" style="height: 90px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 100px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>7. Calcular el área de un triángulo.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio7')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer; transition: background 0.2s ease;">
@@ -194,7 +251,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 130px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>12. Calcular descuento del 10% si la compra supera los 100$.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio12')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
@@ -202,7 +259,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 130px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>13. Calcular el IMC y determinar el estado nutricional de una persona.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio13')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
@@ -210,7 +267,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="exercise-item" style="height: 140px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 155px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>14. Determinar el día de la semana ingresando un número del 1 al 7 usando switch.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio14')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
@@ -221,7 +278,7 @@
                     </div>
                     <div class="level-column">
                         <h3>Nivel Avanzado</h3>
-                        <div class="exercise-item" style="height: 140px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 155px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>15. Crear una calculadora básica para realizar operaciones (+, -, *, /) usando switch.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio15')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
@@ -237,7 +294,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="exercise-item" style="height: 115px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 150px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>17. Mostrar la tabla de multiplicar de un número entero ingresado por el usuario.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio17')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
@@ -245,7 +302,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 135px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>18. Validar que un número ingresado sea positivo usando un bucle while.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio18')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
@@ -253,7 +310,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 150px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>19. Crear un menú de opciones interactivo que se repita usando un bucle do-while.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio19')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
@@ -261,7 +318,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="exercise-item" style="height: 105px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
+                        <div class="exercise-item" style="height: 135px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important;">
                             <p>20. Calcular el factorial de un número entero positivo utilizando un bucle for.</p>
                             <div>
                                 <button onclick="mostrarSolucion('ejercicio20')" style="display: inline-block; padding: 6px 15px; background: #D32F2F; color: white; border: none; border-radius: 5px; font-size: 0.8rem; font-family: sans-serif; font-weight: bold; cursor: pointer;">
